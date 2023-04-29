@@ -31,14 +31,8 @@ const Programme = ({ handleNewProgram, updateProgramme }) => {
     setShow(true);
   }, [updateProgramme]);
 
-  const updateProgrammes = (e) => {
-    // setInputs(updateProgramme);
-    // setShow(true);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(inputs);
     if(programmeToUpdate){
       const res = await axios.put(`/Programme/update-programme?id=${inputs.id}`, inputs);
       if (res.data.statusCode === 200) {
@@ -57,7 +51,6 @@ const Programme = ({ handleNewProgram, updateProgramme }) => {
       }
     } catch (err) {
       console.log(err);
-      //   setError(err.response.data);
     }
   };
 

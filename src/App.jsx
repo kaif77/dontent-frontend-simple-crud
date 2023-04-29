@@ -19,7 +19,6 @@ function App() {
   //   },
   // ];
 
-
   return (
     <div className="App">
       <Navbar />
@@ -27,8 +26,5 @@ function App() {
     </div>
   );
 }
-
-// https://www.javaguides.net/2020/07/react-js-crud-application-example.html
-// https://www.freecodecamp.org/news/react-crud-app-how-to-create-a-book-management-app-from-scratch/
 
 export default App;

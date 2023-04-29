@@ -12,13 +12,8 @@ const SearchArea = ({ handleOnSearch }) => {
   };
 
   useEffect(() => {
-    // console.log(searchText);
     handleOnSearch(searchText);
   }, [searchText]);
-
-  // const handleSearchText = () => {
-
-  // }
 
   return (
     <>

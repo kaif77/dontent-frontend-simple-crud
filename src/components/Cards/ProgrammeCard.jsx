@@ -10,15 +10,12 @@ const ProgrammeCard = ({
   handleOnDelete,
   handleOnUpdateProgramme,
 }) => {
-  // useEffect(() =>  {
-    
-  // })
   let uProgramme = {
     id: id,
     programme: programme,
     programmeCoordinator: programmeCoordinator,
-    programmeDescription: programmeDescription
-  }
+    programmeDescription: programmeDescription,
+  };
   return (
     <div className="cards col-md-3 mx-4 my-3">
       <Card className="card" style={{ width: "18rem" }}>

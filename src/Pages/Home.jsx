@@ -37,7 +37,6 @@ const Home = () => {
   const [updateProgramme, setUpdateProgramme] = useState(null);
 
   const handleNewProgram = () => {
-    // setProgrammes(...programmes, program);
     fetchData();
   };
 
@@ -52,8 +51,6 @@ const Home = () => {
 
   const handleOnUpdateProgramme = (programme) => {
     setUpdateProgramme(programme);
-    // setUpdateProgramme(programme);
-    // handleProgrammeUpdate();
   };
 
   const fetchData = async () => {
@@ -70,18 +67,12 @@ const Home = () => {
     const temp = programmes;
     const results = temp.filter((p) => {
       if (programme.trim() === "" || programme === null) {
-        console.log("p")
         return p;
       }
       return p.programmeName.toLowerCase().includes(programme.toLowerCase());
     });
-    // console.log("in search", results);
     setTempProgrammes(results);
   };
-
-  //   useEffect(() => {
-  //     fetchData();
-  //   }, [programmes]);
 
   useEffect(() => {
     fetchData();
