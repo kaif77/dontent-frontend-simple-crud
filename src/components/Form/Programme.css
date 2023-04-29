@@ -1,0 +1,13 @@
+Form {
+  padding: 20px;
+}
+
+.form-row {
+  padding: 15px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.sub-heading{
+    width: 100%;
+}
